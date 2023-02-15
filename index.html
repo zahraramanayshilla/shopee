@@ -7,67 +7,270 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>SHOPEE </title>
     <style>
-        .divpractice {
-            width: 900px;
-            height: 500px;
+        @import url('css/default.css');
+        @import url('css/gnb.css');
+        @import url('css/banner.css');
 
-            background-color: rgb(15, 61, 61);
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            padding: 10px;
-            margin: 0px auto 0px auto;
-        }
-
-        .divpractice >.first {
-            width: 40%;
-            height: 200px;
-
-            background-color: rgb(100, 43, 165);
-        }
-
-        .divpractice >.second {
-            width: 40%;
-            height: 300px;
-
-            background-color: rgb(106, 206, 231);
-            
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .divpractice >.second > button{
-            margin-right: 5px;
-            padding: 10px;
-        }
+      
     </style>
-
-    <script>
-        function hey(){
-            alert('hello')
-        }
-    </script>
 </head>
 
 <body>
-    <h1>my review page</h1>
-    <h2>this is subtitle</h2>
-    <div class="divpractice">
-        <div class="first">first div</div>
-        <div class="second" id="second-box">
-            <button onclick="hey()">button first</button>
-            <button>button second</button>
-            <button>button third</button>
+    <div class="gnb">
+        <div class="top flex-row">
+            <div class="left flex-row">
+                <li>Seller Center</li>
+                <li>|</li>
+                <li>Mulai Jualan</li>
+                <li>|</li>
+                <li>Download</li>
+                <li>|</li>
+                <li>Ikuti kami di</li>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-person-circle"></i>
+            </div>
+            <div class="right flex-row">
+                <li><i class="bi bi-bell"></i>Notifikasi</li>
+                <li><i class="bi bi-question-circle"></i>Bantuan</li>
+                <li><i class="bi bi-question-circle"></i>Bahasa Indonesia<i class="bi bi-caret-down"></i></li>
+                <li>Daftar</li>
+                <li>|</li>
+                <li>Log In</li>
+            </div>
+        </div>
+        <div class="bottom flex-row">
+            <img width="150" height="50" src="./image/logo_shopee.png">
+            <div class="search flex-col">
+                <div class="search-box flex-row">
+                    <input type="text">
+                    <button><i class="bi bi-search"></i></button>
+                </div>
+                <div class="tags flex-row">
+                    <li>tas wanita </li>
+                    <li>sepatu wanita </li>
+                    <li>jam tangan wanita</li>
+                    <li>kemeja wanita</li>
+                    <li>sepatu pria</li>
+                    <li>kacamata</li>
+                    <li>celana pendek pria </li>
+                    <li>masker</li>
+
+                </div>
+            </div>
+            <div class="cart">
+                <i class="bi bi-cart"></i>
+            </div>
         </div>
     </div>
+    <div class="banner flex-col">
+        <div class="top-section flex-row">
+            <div class="left-banners swiper ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" data-swiper-autoplay="2000"><img src="image/banners/banner_1.png"></div>
+                    <div class="swiper-slide" data-swiper-autoplay="2000"><img src="image/banners/banner_2.png"></div>
+                    <div class="swiper-slide" data-swiper-autoplay="2000"><img src="image/banners/banner_3.png"></div>
+                    <div class="swiper-slide" data-swiper-autoplay="2000"><img src="image/banners/banner_4.png"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="right-banners flex-col">
+                <img src="image/banners/banner_right_top.png">
+                <img src="image/banners/banner_right_bottom.png">
+
+            </div>
+        </div>
+        <div class="bottom-section flex-row">
+            <li class="flex-col">
+                <img src="image/icons/1.png ">
+                <span>Shopee pilih lokal</span>
+            </li>
+            <li class="flex-col">
+                <img src="image/icons/2.png ">
+                <span>Pulsa, Tagihan, dan Tiket</span>
+            </li>
+            <li class="flex-col">
+                <img src="image/icons/3.png ">
+                <span>Elektronik 100% ORI</span>
+            </li>
+            <li class="flex-col">
+                <img src="image/icons/4.png ">
+                <span>inFashion</span>
+            </li>
+            <li class="flex-col">
+                <img src="image/icons/5.png ">
+                <span>Shopee Supermarket</span>
+            </li>
+            <li class="flex-col">
+                <img src="image/icons/6.png ">
+                <span>Bayar Di Tempat</span>
+            </li>
+            <li class="flex-col">
+                <img src="image/icons/7.png ">
+                <span>Murah Lebay</span>
+            </li>
+            <li class="flex-col">
+                <img src="image/icons/8.png ">
+                <span>Gratis Ongkir dan Voucher</span>
+            </li>
+            <li class="flex-col">
+                <img src="image/icons/9.png ">
+                <span>Shopee Barokah</span>
+            </li>
+            <li class="flex-col">
+                <img src="image/icons/10.png ">
+                <span>Semua Promo</span>
+            </li>
+        </div>
+    </div>
+    <div class="category">
+        <div class="category-wrap flex-col">
+            <div class="category-title">KATEGORI</div>
+            <div class="cards-box flex-row">
+                <li class="flex-col">
+                    <div class="card flex-col">
+                        <img src="image/category/1.png" alt="">
+                        <span>Elektronik</span>
+                    </div>
+                    <div class="card flex-col">
+                        <img src="image/category/11.png" alt="">
+                        <span>Makanan & Minuman</span>
+                    </div>
+                </li>
+                <li class="flex-col">
+                    <div class="card flex-col">
+                        <img src="image/category/2.png" alt="">
+                        <span>Komputer & Akesoris</span>
+                    </div>
+                    <div class="card flex-col">
+                        <img src="image/category/12.png" alt="">
+                        <span>Perawatan & Kecantikan</span>
+                    </div>
+                </li>
+                <li class="flex-col">
+                    <div class="card flex-col">
+                        <img src="image/category/3.png" alt="">
+                        <span>Handphone & Aksesoris</span>
+                    </div>
+                    <div class="card flex-col">
+                        <img src="image/category/13.png" alt="">
+                        <span>Perlengkapan Rumah</span>
+                    </div>
+                </li>
+                <li class="flex-col">
+                    <div class="card flex-col">
+                        <img src="image/category/4.png" alt="">
+                        <span>Pakaian Pria</span>
+                    </div>
+                    <div class="card flex-col">
+                        <img src="image/category/14.png" alt="">
+                        <span>Pakaian wanita</span>
+                    </div>
+                </li>
+                <li class="flex-col">
+                    <div class="card flex-col">
+                        <img src="image/category/5.png" alt="">
+                        <span>Sepatu Pria</span>
+                    </div>
+                    <div class="card flex-col">
+                        <img src="image/category/15.png" alt="">
+                        <span>Fashion Muslim</span>
+                    </div>
+                </li>
+                <li class="flex-col">
+                    <div class="card flex-col">
+                        <img src="image/category/6.png" alt="">
+                        <span>Tas Pria</span>
+                    </div>
+                    <div class="card flex-col">
+                        <img src="image/category/16.png" alt="">
+                        <span>Fashion Bayi & Anak</span>
+                    </div>
+                </li>
+                <li class="flex-col">
+                    <div class="card flex-col">
+                        <img src="image/category/7.png" alt="">
+                        <span>Aksesoris Fashion</span>
+                    </div>
+                    <div class="card flex-col">
+                        <img src="image/category/17.png" alt="">
+                        <span>Ibu & Bayi</span>
+                    </div>
+                </li>
+                <li class="flex-col">
+                    <div class="card flex-col">
+                        <img src="image/category/8.png" alt="">
+                        <span>Jam Tangan </span>
+                    </div>
+                    <div class="card flex-col">
+                        <img src="image/category/18.png" alt="">
+                        <span>Sepatu Wanita</span>
+                    </div>
+                </li>
+                <li class="flex-col">
+                    <div class="card flex-col">
+                        <img src="image/category/9.png" alt="">
+                        <span>Kesehatan</span>
+                    </div>
+                    <div class="card flex-col">
+                        <img src="image/category/9.png" alt="">
+                        <span>Tas Wanita</span>
+                    </div>
+                </li>
+                <li class="flex-col">
+                    <div class="card flex-col">
+                        <img src="image/category/10.png" alt="">
+                        <span>Hobi & Koleksi</span>
+                    </div>
+                    <div class="card flex-col">
+                        <img src="image/category/20.png" alt="">
+                        <span>Otomotif</span>
+                    </div>
+                </li>
+            </div>
+        </div>
+
+    </div>
+    <!-- <div class="floating">
+        <img src="image/floating.png">
+    </div> -->
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            //Swiper Slide
+            autoplay: {
+                delay: 5000,
+            },
+        });
+    </script>
 </body>
 
 </html>

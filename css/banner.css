@@ -1,0 +1,117 @@
+.banner{
+    padding-top:30px ;
+    padding-bottom: 10px;
+}
+.left-banners{
+    margin-bottom: auto;
+    margin-right: 5px;
+    
+}
+.left-banners >img{
+    width: 815px;
+    border-radius: 3px;
+}
+.right-banners >img{
+    width: 400px;
+    border-radius: 3px;
+    margin-bottom: 33px;
+}
+.bottom-section{
+    width: 1200px;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+.bottom-section >li{
+    width: 100px;
+    height: 80px;
+    text-align: center;
+
+    cursor: pointer;
+}
+.bottom-section >li:hover >img{
+    width: 48px;
+    margin-bottom: 6px;
+
+}
+.bottom-section >li >img{
+    width: 45px;
+    margin-bottom: 5px;
+
+}
+.bottom-section >li >span{
+    margin-bottom: auto;
+
+}
+.swiper{
+    width: 815px;
+}
+.swiper-button-prev{
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px;
+    left: 0;
+    display: none;
+}
+.swiper-button-next{
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px;
+    right: 0;
+    display: none;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.swiper:hover>.swiper-button-prev, .swiper:hover>.swiper-button-next {
+    display: flex;
+}
+.swiper-pagination-bullet-active{
+    background-color: white;
+}
+.floating{
+    position: fixed;
+    right: 200px;
+    bottom: 100px;
+}
+.floating {
+    position: fixed;
+    right: 200px;
+    bottom: 100px;
+}
+.category{
+    background-color: #f2f2f2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.category-wrap{
+    width: 1200px;
+    margin: auto;
+    background-color: white;
+}
+.category-title{
+    padding: 25px;
+    margin-right: auto;
+    font-size: 14px;
+    font-weight: 500px;
+    color: gray;
+}
+.card > img{
+    width: 83px;
+}
+.cards-box{
+    width: 100%;
+    justify-content: space-evenly;
+}
+.card{
+    border: 0.5 solid #f2f2f2;
+    width: 120px;
+    box-sizing: border-box;
+    height: 120px;
+    cursor: pointer;
+    text-align: center;
+}
+.card:hover {
+    box-shadow: 0px 0px 5px 0px #f2f2f2;
+
+}
